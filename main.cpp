@@ -12,7 +12,10 @@ int main()
 
     cpp.text = "C++";
     cpp.url = "https://www.cplusplus.com/";
-    languages->set_at(1, cpp);
+    languages->set_at(1, cpp);   
+
+    languages->display_forward();
+    languages->display_backward();
 
     return 0;
 }
