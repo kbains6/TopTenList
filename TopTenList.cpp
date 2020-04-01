@@ -25,14 +25,12 @@ Hyperlink TopTenList::get(int index)
 
 void TopTenList::display_forward(){
 	for(int i = 1; i <= (int)_list.size(); i++){
-		cout << i  << ": " << _list.at(i-1).text << endl;
-	}
-	cout << endl;
+		cout << i  << ": " << _list.at(i-1).text << " " << _list.at(i-1).url << endl;
+	}	
 }
 
 void TopTenList::display_backward(){
 	for(int i = (int)_list.size(); i >= 1; i--){
-		cout << i << ": " << _list.at(i-1).text << endl;
+		cout << i << ": " << _list.at(i-1).text << " " << _list.at(i-1).url << endl;
 	}
-	cout << endl;
 }
